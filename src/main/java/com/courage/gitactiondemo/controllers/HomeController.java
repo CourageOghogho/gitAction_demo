@@ -15,4 +15,9 @@ public class HomeController {
     public ResponseEntity<User> showUser(){
         return new ResponseEntity<User>(new User(2,"Courage"),HttpStatus.ACCEPTED);
     }
+
+    @GetMapping("/all")
+    public ResponseEntity<User> allStudent(){
+        return new ResponseEntity<User>(new User(3,"Courage"),HttpStatus.ACCEPTED);
+    }
 }
